@@ -33,9 +33,9 @@ jobs:
           submodules: recursive
       - uses: actions/setup-dotnet@v5
       - name: Install mono and xbuild
-        run: |-
-          sudo apt-get update
-          sudo apt-get install -y git mono-complete mono-xbuild
+        uses: awalsh128/cache-apt-pkgs-action@v1
+        with:
+          packages: git mono-complete mono-xbuild
 
       - name: Update const string BepinEx version field
         run: sed -i 's/"0.0.1"/"${{needs.vars.outputs.tag}}"/g' ${{needs.vars.outputs.mod}}/${{needs.vars.outputs.mod}}.cs
@@ -113,9 +113,9 @@ jobs:
       - uses: actions/setup-dotnet@v5
 
       - name: Install mono and xbuild
-        run: |-
-          sudo apt-get update
-          sudo apt-get install -y git mono-complete mono-xbuild
+        uses: awalsh128/cache-apt-pkgs-action@v1
+        with:
+          packages: git mono-complete mono-xbuild
 
       - name: Update const string BepinEx version field
         run: sed -i 's/"0.0.1"/"${{needs.vars.outputs.tag}}"/g' EquipWheel/EquipWheel.cs

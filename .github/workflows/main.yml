@@ -55,14 +55,14 @@ jobs:
       - uses: papeloto/action-zip@v1
         with:
           files: ${{needs.vars.outputs.mod}}.dll ${{needs.vars.outputs.mod}}/icon.png ${{needs.vars.outputs.mod}}/manifest.json ${{needs.vars.outputs.mod}}/README.md
-          dest: ${{needs.vars.outputs.mod}}_thunderstore.zip
+          dest: ${{needs.vars.outputs.mod}}_${{needs.vars.outputs.tag}}_thunderstore.zip
         if: steps.check_files.outputs.exists == 'true'
 
       # Package for Nexus Mods
       - uses: papeloto/action-zip@v1
         with:
           files: ${{needs.vars.outputs.mod}}.dll
-          dest: ${{needs.vars.outputs.mod}}_nexusmods.zip
+          dest: ${{needs.vars.outputs.mod}}_${{ needs.vars.outputs.tag }}_nexusmods.zip
 
       - name: Change Log
         id: changelog
@@ -154,12 +154,12 @@ jobs:
       - uses: papeloto/action-zip@v1
         with:
           files: EquipWheelTwo.dll EquipWheelThree.dll EquipWheelFour.dll MoreEquipWheels/icon.png MoreEquipWheels/manifest.json MoreEquipWheels/README.md
-          dest: More_EquipWheels_thunderstore.zip
+          dest: More_EquipWheels_${{ needs.vars.outputs.tag }}_thunderstore.zip
 
       - uses: papeloto/action-zip@v1
         with:
           files: EquipWheelTwo.dll EquipWheelThree.dll EquipWheelFour.dll
-          dest: More_EquipWheels_nexusmods.zip
+          dest: More_EquipWheels_${{ needs.vars.outputs.tag }}_nexusmods.zip
 
       - name: Upload Release Asset
         id: upload-asset

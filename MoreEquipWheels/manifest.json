@@ -5,6 +5,6 @@
     "description": "This is an extension mod for the EquipWheel mod. It adds 3 additional equip wheels to the game.",
     "dependencies": [
         "denikson-BepInExPack_Valheim-5.4.2350",
-        "virtuaCode-EquipWheel-0.0.1"
+        "ZashIn-EquipWheel-0.0.1"
     ]
 }

@@ -1,44 +1,23 @@
+## Update
+
+This is the updated version for [EquipWheel by virtualCode](https://thunderstore.io/c/valheim/p/virtuaCode/EquipWheel/).
+
+[The Update](https://thunderstore.io/c/valheim/p/ZashIn/MoreEquipWheels/) for the [original MoreEquipWheels](https://thunderstore.io/c/valheim/p/virtuaCode/MoreEquipWheels/) is also available.
+
 ## Overview
 
 This mod adds an user interface for equipping/using items in an easier and faster way. The menu will be visible by holding the 'G' key (can be changed). On gamepads it's the 'Use' button (X or A on Xbox Controllers) by default. (Can be changed to the 'Sit' Button or Left/Right button on the D-Pad.)
-
-**New in version 1.5.2: Added config entry for using Sit-Button**
-
-The new config allows you to use the 'Sit' button again as a hotkey. Just enable it in the config (UseSitButton = true). 
-
-**New in version 1.5.1: Changed Gamepad bindings**
-
-Hotkeys for Gamepad has been changed. The default is now the 'Use' button (X on Xbox Controllers). 
-
-**New in version 1.5.0: Changed Gamepad bindings and Regex filtering**
-
-Hotkeys for Gamepad has been changed. The default is now the LEFT (or RIGHT) button on the D-Pad. 
-Filtering items now supports Regular Expressions.
-
-**New in version 1.3.0: Better binding for hotkeys**
-
-Hotkeys can now be key combos like 'SHIFT + 1'. Also the hotkey for gamepads can be changed in the config.
-
-**New in version 1.2.0: Item Type Matching Mode**
-
-When enabled, it scans the whole inventory for items of the specified types in the config and use them in the equip wheel.
-
-**New in version 1.1.0: Gamepad Support**
-
-Rebinds the gampad X-button to open the equip wheel. The left joystick controls the selected item.
-
 
 To trigger equipping, release the Hotkey after selecting an item. (When TriggerOnRelease = true)
 
 To trigger equipping, press the left mouse button after selecting an item. (When TriggerOnClick = true)
 
-If you equip an one-handed weapon, the shield (if available) will be equipped automatically. 
+If you equip an one-handed weapon, the shield (if available) will be equipped automatically.
 
 The mod allows also to choose a different inventory row to use for the equip wheel.
 The top-left hotkey bar can be optionally disabled.
 
 Info: This mod should only be installed on the client side.
-
 
 ## Requirements (Manual Installation)
 
@@ -57,7 +36,8 @@ A config file will be created after running the game once while the mod is insta
 
 ## Source Code
 
-[https://github.com/virtuaCode/valheim-mods](https://github.com/virtuaCode/valheim-mods)
+Original: [https://github.com/virtuaCode/valheim-mods](https://github.com/virtuaCode/valheim-mods)
+Update for Valheim 1.0+: [https://github.com/ZashIn/valheim-mods/releases](https://github.com/ZashIn/valheim-mods/releases)
 
 ## Change Log
 

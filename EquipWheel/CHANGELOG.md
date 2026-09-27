@@ -1,3 +1,5 @@
+## v1.5.7
+- Add missing CHANGELOG.md
 ## v1.5.6
 - Seperate thunderstore release for Valheim 1.0+
 ## v1.5.5

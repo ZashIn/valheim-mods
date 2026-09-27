@@ -145,7 +145,7 @@ jobs:
         run: sed -i 's/"0.0.1"/"${{needs.vars.outputs.tag}}"/g' MoreEquipWheels/manifest.json
 
       - name: Update const string version field (2/2)
-        run: sed -i 's/"virtuaCode-EquipWheel-0.0.1"/"virtuaCode-EquipWheel-${{needs.vars.outputs.tag}}"/g' MoreEquipWheels/manifest.json
+        run: sed -i -E 's/"([^"]*)-EquipWheel-0.0.1"/"\1-EquipWheel-${{needs.vars.outputs.tag}}"/g' MoreEquipWheels/manifest.json
 
       - name: Download artifacts
         uses: actions/download-artifact@v5
